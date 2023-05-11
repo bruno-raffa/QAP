@@ -14,3 +14,16 @@ The problem is defined here is defined here: https://neos-guide.org/case-studies
 The approach used here involves using a Constrained Quadratic Model (CQM).  The solution is computed using the LeapHybridCQMSampler.
 
 We will consider two cases the simplest one (n=4) and the most complex one (n=9). The results obtained in both of the cases with CQM are coincident with the optimal results obtained in the case study, confirming that Dwave annealer can be used for coping this problem.
+
+### Objective
+We use a dictionary comprehension where each variable is a binary variable corresponding to the assignment of a facility to a location.
+
+The cost is computed as the product of the flow between the facilities and the distance between the locations, multiplied by the binary variables corresponding to the assignment of each facility to each location.
+
+### Constraint
+
+1. Each facility is assigned to exactly one location
+2. each location is assigned to exactly one facility
+
+## References
+ Koopmans TC, Beckmann M (1957). Assignment problems and the location of economic activities. Econometrica 25(1):53-76
