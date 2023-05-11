@@ -1,4 +1,4 @@
-*Quadratic assignment problem (QAP)
+# Quadratic assignment problem (QAP)
 
 
 
@@ -13,7 +13,7 @@ The problem is defined here is defined here: https://neos-guide.org/case-studies
 
 The approach used here involves using a Constrained Quadratic Model (CQM).  The solution is computed using the LeapHybridCQMSampler.
 
-We will consider two cases the simplest one (n=4) and the most complex one (n=9). The results obtained in both of the cases with CQM are coincident with the optimal results obtained in the case study, confirming that Dwave annealer can be used for coping this problem.
+We will consider two cases the simplest one (n=4) and the most complex one (n=9). The results obtained in both of the cases with CQM are coincident with the optimal results obtained in the case study, confirming that Dwave annealer(https://cloud.dwavesys.com/leap) can be used for coping this problem.
 
 ### Objective
 We use a dictionary comprehension where each variable is a binary variable corresponding to the assignment of a facility to a location.
